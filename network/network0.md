@@ -104,11 +104,11 @@ it is faster, effecient and more secure
       - browser to sent request use first IP of the server by DNS
         * you can use to get the web IP
 
-            nslookup < web-address >
+            `nslookup < web-address >`
       
-         * then there is Certificate Chain
-         * check the Certificates
-         * all other connect will be symmertric
+      - then there is Certificate Chain
+      - check the Certificates
+      - all other connect will be symmertric
    7. browser display the response
    
 
