@@ -104,12 +104,38 @@ it is faster, effecient and more secure
       - browser to sent request use first IP of the server by DNS
         * you can use to get the web IP
 
-            `nslookup < web-address >`
+            `$ nslookup < web-address >`
       
       - then there is Certificate Chain
       - check the Certificates
       - all other connect will be symmertric
    7. browser display the response
+
+
+## TCP vs UDP
+   * **Every packet has** source IP, source port (from 0 to 65353), destination IP, destination Port(depend on HTTP or HTTPs)
+   * **TCP:** 
+   when I make http request, it sends it as a packets and each packet has sequance number and we want to make sure that all packets in arrived and know which packets that doesn't arrived (synchronize)
+   - that we want **TCP handshake**: 
+     1. send SYN and say for ex: my sequance number is 700 
+     2. the server will respons back with SYN ex: 200
+     3. to tell the client that the packet is recieved: the server will send acknoledgement (ack 700+len(packet))
+     4. the clien will send acknowledgement of the server (ack 200+len(packet))
+     5. In real world the 2. and 3. send together as SYN/ACK so it is called 3 handshake
+     6. after that the http request will happend 😁
+   - So TCP is (connection orianted), make sure that all packets arrived savely but It make tree request every time, it is a headache when you want to sent alot of data  so it used in (emails, )
+   
+   * **UDP**:
+   send the packets and it doesn't want a response that all packets is arrived used (load the packet to other end is the end) it is suitable for applications that needs fast, efficient transmission (stream or videos on youtube)
+   * code:
+      $ ifconfig
+      >> mtu 1500 in < some informtion > 
+
+   mtu (maximum transition unit) -> the size of each packet
+   - the TCP will arrange the packets
+   - But UDP doesn't arrange the packets only sending
+   
+
    
 
       
