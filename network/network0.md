@@ -4,6 +4,7 @@
    * you can load files like (html, js, images, etc..)
    * you can sent info from it
 	each request is independent
+	
 ## HTTPS
    * Hyper Text Transfer Transfer Protocol Secure	
    * Data sent is encrypted
@@ -16,7 +17,7 @@
 
 
 
-## HTTP requirst
+## HTTP request
    * have (header, body)
    * important header
         * General
@@ -53,7 +54,7 @@ it is faster, effecient and more secure
 
 	https://www.google.com.eg/imghp?hl=ar&authuser=0&ogbl
 
-	|-----| |-----------------------||------------------------------------|
+	|-----| |----------------||--------------------------|
 
 	protocal          domain                      document
 
@@ -80,11 +81,35 @@ it is faster, effecient and more secure
 	 2. browser make the private key from the public key
    
 ## symmetric vs asymmetric encryption
-   * symmetric: uses the same key to encryption and decryption **ex:** (Caesar Cipher)
-   * asymmetric: uses public key for encryption and private key to decryption **ex:** (RSA)
+   * **symmetric:** uses the same key to encryption and decryption **ex:** (Caesar Cipher)
+   * **asymmetric:** uses public key for encryption and private key to decryption **ex:** (RSA)
+
+## OSI (7 layers)
+   1. **Physical layer**: send the data on physical wires (hubs, cables, ..)
+   2. **Data link**: reads the MAC address from the data packet (Switches)
+   3. **Network**: reads IP address from the packet (Router)
+   4. **Transport**: Responsible for the transport protocol and error handling (TCP, UDP)
+   5. **Session**: establishes or ends the connections between two hosts
+   6. **Presentation**: Encrypt & Decrypt
+   7. **Application**: Services are used with the end-user applications
 
 
+## What Happens when I open Google.com in my browser 
+   1. first there is a connection with wires (physical layer)
+   2. you have the MAC address throught switch (Data layer)
+   3. you request the IP address (DHCP will give you this IP) (network layer)
+   4. HTTPs and HTTP uses TCP and everyone ask its port 443 / 80
+   5. ..
+   6. Presentation
+      - browser to sent request use first IP of the server by DNS
+        * you can use to get the web IP
 
+            nslookup < web-address >
+      
+         * then there is Certificate Chain
+         * check the Certificates
+         * all other connect will be symmertric
+   7. browser display the response
+   
 
-
-
+      
