@@ -128,12 +128,23 @@ it is faster, effecient and more secure
    * **UDP**:
    send the packets and it doesn't want a response that all packets is arrived used (load the packet to other end is the end) it is suitable for applications that needs fast, efficient transmission (stream or videos on youtube)
    * code:
-      $ ifconfig
-      >> mtu 1500 in < some informtion > 
+      `$ ifconfig
+      >> mtu 1500 in < some informtion > `
 
    mtu (maximum transition unit) -> the size of each packet
    - the TCP will arrange the packets
    - But UDP doesn't arrange the packets only sending
+
+## DNS
+   - Domain Name System
+   - use it to get the IP address from URL
+   - may your DNS server is your router or may google server, ..
+   - Non authoritative means that this is not from the place you should ask about this website
+   - Top level domain: like '.com'
+   - if the answer it is not in router you will go to the next higher level 
+
+      * ex: router->Service provider(SP)->.com
+
    
 
    
