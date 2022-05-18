@@ -128,8 +128,10 @@ it is faster, effecient and more secure
    * **UDP**:
    send the packets and it doesn't want a response that all packets is arrived used (load the packet to other end is the end) it is suitable for applications that needs fast, efficient transmission (stream or videos on youtube)
    * code:
-      `$ ifconfig
-      >> mtu 1500 in < some informtion > `
+
+     ` $ ifconfig `
+     
+     `  >> mtu 1500 in < some informtion > `
 
    mtu (maximum transition unit) -> the size of each packet
    - the TCP will arrange the packets
@@ -145,8 +147,38 @@ it is faster, effecient and more secure
 
       * ex: router->Service provider(SP)->.com
 
+## DNS Record types
+   1. A: sub-domain ex: www
+   2. AAAA: like A but IP v6
+   3. MX: main server
+   4. CNAME: alias (another domain has the same content)
    
 
-   
+## client server model
+   * **Client** can be a machine or a program, that make a request through the web
+     - client manchine: computer, laptop, mobile, etc..
+     - client program: web browser, photo editor, etc..
+   * **Server** is a computer program NOT A DEVICE
+      - High-performance computers are called servers becaouse they run server programs
+      - Server porvides functionality and serve other programs called clients
+      - a single sever can serve multiple cleints at the same time
+      - we can run mutliple servers on one single machine
+      - Types of the servers:
+        1. web servers (apache) serve http requests
+        2. database server Run DMS
+      - A server can contain: web resources, host web applications, stores user and program data, etc..
+   * **client-server model** is a way for computers to commuticate via the web
+     - is based on centralized structure based on requests and responds
+     - there is another model is decenteralized structure ex: Peer-to-peer model
+     - **peer to peer model** there is no client or server but both can be request and response **ex:** video chat
 
-      
+## client server database
+   * operations:
+     1. SQL request from machine
+     2. database work performed in server
+     3. return record-set
+   * components:
+     - relational database engine: receives the data query and parsing it and figure how to optimize them and how to process them
+     - storage engine: represented by (cache, buffer), handles the i/o of the memory
+   
+   
