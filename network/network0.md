@@ -180,5 +180,24 @@ it is faster, effecient and more secure
    * components:
      - relational database engine: receives the data query and parsing it and figure how to optimize them and how to process them
      - storage engine: represented by (cache, buffer), handles the i/o of the memory
-   
-   
+
+## server in deep
+   * what is a web server?
+     - It is software that serves web-content(html pages, images pdfs, json files, api, etc..)
+     - Uses the HTTP protocol
+     - static and dynamic content (dynamic like facebook every user has his own page and home page, ..)
+     - used to host web pages, blogs and built APIs
+   * How web servers work?
+     - client has IP address and server has its name (from dns you can get the IP of the server) and port 
+     - first there is TCP connection first to make a request (three hand shake)
+     - the server will process this request maybe go to and retraive data or modify it from the database
+   * Block single-threaded web server
+     - when you make request transsmission layer there is a TCP connection establish the 2 way communication between the server and the client
+     - HTTP is only the request to respond
+     - when you establish the connection the server creates in its memory
+     (TCP socket)
+     - when the thread is bussy that thead connot do anything else if there is another request is should wait utill the threat becomes free (release)
+     - when there is another request from the same client that shouldn't estaplish new connection that make things more faster but it wastes more memery
+     - There is maximum thread number or maximum connections
+     
+     
