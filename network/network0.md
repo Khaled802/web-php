@@ -199,5 +199,3 @@ it is faster, effecient and more secure
      - when the thread is bussy that thead connot do anything else if there is another request is should wait utill the threat becomes free (release)
      - when there is another request from the same client that shouldn't estaplish new connection that make things more faster but it wastes more memery
      - There is maximum thread number or maximum connections
-     
-     
