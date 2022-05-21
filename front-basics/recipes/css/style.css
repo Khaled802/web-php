@@ -1,0 +1,27 @@
+body {
+    padding: 30px;
+    background-color: #FFEF82;
+}
+
+h1 {
+    color: #82954B;
+    font-family: 'Macondo', cursive;
+}
+
+h2 {
+    color: #BABD42;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    border:none;
+  border-top:5px dashed #EFD345;
+
+
+  height:10px;
+  width:50%;
+}
+
+img {
+    width: 30%;
+}

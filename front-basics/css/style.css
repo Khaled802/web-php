@@ -1,0 +1,42 @@
+body {
+    background-color: #FFEF82;
+    color: #82954B;
+    padding: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Macondo', cursive;
+    font-size: 5em;
+}
+
+.icon {
+    text-align: center;
+}
+
+.recipes {
+    border: 5px solid #BABD42;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.recipes ul {
+    list-style: none;
+}
+
+.recipes img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.recipes div{
+    margin: 30px;
+    border: 5px solid #EFD345;
+}
+
+.recipes a {
+    color: #82954B;
+}
