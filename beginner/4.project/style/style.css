@@ -1,0 +1,43 @@
+body {
+    background-image: url("../img/table.png");
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color:goldenrod;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+
+p {
+    font-size: 35px;
+}
+button {
+    background-color: goldenrod;
+    border: none;
+    border-radius: 3px;
+    color: #016f32;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 25px;
+    font-weight: bold;
+    width: 200px;
+    
+}
+
+.btn-block button {
+    display: block;
+    margin:0 auto;
+    margin-bottom: 5px;
+}
+
+#message-el {
+    font-family: 'Edu QLD Beginner', cursive;
+    font-weight: bold;
+    /* font-style: italic; */
+}
+
+
+
