@@ -477,7 +477,21 @@
 
 
 # chapter 5 class diagram
-   - 
+## keywords
+   - sometime it is hard to remember what is the symbol mean. so the UML try to reduce the symbols and use key words instead
+   - for example interfaces we use to express icon of the class and «interface».
+   - there is an issue that the {abstruct} for example has a curly brackets, and «interface» with guillemets, fortunately it doesn't matter except serious UMLs
+   - some keywords are abbreviated. {abstruct} => {A} or «interface» => «I» 
+   - in UML1, the guillemets were used mainly for stereotypes
+   - in UML2, it descripes what is and isn't sterotypes
+
+## generalization and classifications
+   - **is a** key word that may be represent classification or generalization
+   - **classification**: the object Shep is an instance of the type Border Collie
+   - **generalization**: —the type Border Collie is a subtype of the type Dog
+   - classification can be represented using a keyword «instantiate»
+   - generalization can be represented using a symbol
+
 
 # chapter6 object diagram
    - it is a snapshoot at paricular point, it shows the object not the class an it is useful when the connection is complicated

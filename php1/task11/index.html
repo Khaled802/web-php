@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+</head>
+<body>
+    <form action="edit.php" method="post">
+        <input type="text" name="id" id="id" placeholder='id'>
+        <input type="text" name="name" id="name" placeholder='name'>
+        <input type="text" name="salary" id="salary" placeholder='salary'>
+        <input type="text" name="position" id="position" placeholder='position'>
+        <div>
+            <input type="radio" name="edit" id="add_choice" value="add" checked>
+            <label for="add_choice">add</label>
+            <input type="radio" name="edit" id="remove_choice" value="remove">
+            <label for="remove_choice">remove</label>
+        </div>
+        
+        <button type="submit">edit</button>
+        
+    </form>
+    <script src="script/main.js"></script>
+</body>
+</html>
