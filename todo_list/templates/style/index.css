@@ -1,0 +1,69 @@
+/* https://colorhunt.co/palette/182747562b08647e68d8d8d8 */
+
+body {
+    background-color: #182747;
+    margin: 0;
+}
+
+.message {
+    background-color: yellow;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.nav_bar {
+    background-color: #647E68;
+    padding: 5px;
+}
+
+.nav_link {
+    background-color: #647E68; /* Green */
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.register {
+    background-color: #562B08;
+    margin: 75px auto;
+    padding: 30px;
+    color: #D8D8D8;
+    border-radius: 20px;
+}
+
+input {
+    padding: 7px;
+    border-radius: 10px;
+    width: 250px;
+    background-color: #D8D8D8;
+}
+
+td {
+    padding: 8px 15px;
+}
+
+#submit {
+    width: 60%;
+    font-size: large;
+    margin: auto;
+    display: block;
+    background-color: #D8D8D8;
+    border-radius: 10px;
+    border-width: 0px;
+    padding: 5px;
+}
+button:hover {
+    cursor: pointer;
+}
+
+#show_users {
+    background-color: #562B08;
+    color: #D8D8D8;
+}
